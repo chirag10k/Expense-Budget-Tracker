@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1059067369291",
+    "firebase_url": "https://budgetingapp-b789b.firebaseio.com",
+    "project_id": "budgetingapp-b789b",
+    "storage_bucket": "budgetingapp-b789b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059067369291:android:35c8934cf120975d503ace",
+        "android_client_info": {
+          "package_name": "stucktle.budgetingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059067369291-irsno48qfkkkgtkpiihj8sf6u70ndojq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf6u0CLKe8IR6RZ9V0aEJuGmIHy4yGyRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1059067369291-irsno48qfkkkgtkpiihj8sf6u70ndojq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
