@@ -1,7 +1,11 @@
+import 'package:budgetingapp/enums/connectivity_status.dart';
 import 'package:budgetingapp/shared/constants.dart';
 import 'package:budgetingapp/shared/list.dart';
 import 'package:budgetingapp/widgets/signin_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../offline_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
   @override
@@ -38,10 +42,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final connectionStatus = Provider.of<ConnectivityStatus>(context);
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
+        width: width,
+        height: height,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -55,7 +62,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ],
           ),
         ),
-        child: Padding(
+        child: (connectionStatus == ConnectivityStatus.Offline) ? OfflineScreen() : Padding(
           padding: const EdgeInsets.symmetric(vertical: 40.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -78,7 +85,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
               Container(
                 
-                height: MediaQuery.of(context).size.height/1.5,
+                height: height/1.5,
                 child: PageView.builder(
                   itemCount: _numPages,
                   physics: ClampingScrollPhysics(),
@@ -97,11 +104,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              SizedBox(height: 70,),
+                              SizedBox(height: width/ 10,),
                               Container(
-                                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-                                height: MediaQuery.of(context).size.height / 2.3,
-                                width: MediaQuery.of(context).size.width / 1.5,
+                                padding: EdgeInsets.symmetric(horizontal: 20, vertical: width/ 15),
+                                height: height / 2.3,
+                                width: width / 1.5,
                                 decoration: BoxDecoration(
                                   boxShadow: [
                                     BoxShadow(
@@ -117,33 +124,32 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: <Widget>[
                                     Container(
-                                      width: 120,
-                                      height: 120,
+                                      width: width / 4,
+                                      height: width / 4,
                                       child: Image.asset(
                                         onboardImageString[page],
                                         fit: BoxFit.contain,
                                       ),
                                     ),
-                                    SizedBox(height: 20,),
                                     Text(
                                       onboardTitle[page],
                                       textAlign: TextAlign.center,
+                                      textScaleFactor: MediaQuery.of(context).textScaleFactor * 1.2,
                                       style: TextStyle(
                                         fontFamily: 'Rome',
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 35,
                                         color: Colors.indigo
                                       ),
                                     ),
-                                    SizedBox(height: 20,),
+                                    SizedBox(height: 10,),
                                     Text(
                                       onboardSubTitle[page],
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
-                                        fontSize: 16,
                                         color: Colors.blueGrey,
                                       ),
                                     ),

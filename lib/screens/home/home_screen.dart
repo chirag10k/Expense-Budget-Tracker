@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   Widget build(BuildContext context) {
     final user1 = Provider.of<User>(context);
     final DatabaseService _db = DatabaseService(user: user1);
+    print('%');
     return StreamBuilder(
       stream: _db.userData,
       builder: (context, snapshot){
