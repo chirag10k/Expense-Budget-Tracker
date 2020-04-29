@@ -1,4 +1,5 @@
 import 'package:budgetingapp/services/auth_service.dart';
+import 'package:budgetingapp/shared/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -30,11 +31,11 @@ class _SignInState extends State<SignIn> {
             color: Colors.white,
             elevation: 5.0,
             onPressed: () async {
-              //setState(() => loading = true);
+//              setState(() => loading = true);
               dynamic result = await _authService.signInWithGoogle();
 //              if(result == null){
-                //setState(() {
-                  //loading = false;
+//                setState(() {
+//                  loading = false;
 //                });
 //              }
               return result;

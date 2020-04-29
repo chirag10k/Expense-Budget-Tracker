@@ -42,7 +42,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final connectionStatus = Provider.of<ConnectivityStatus>(context);
+//    final connectionStatus = Provider.of<ConnectivityStatus>(context);
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
@@ -62,7 +62,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ],
           ),
         ),
-        child: (connectionStatus == ConnectivityStatus.Offline) ? OfflineScreen() : Padding(
+        child: /*(connectionStatus == ConnectivityStatus.Offline) ? OfflineScreen() :*/ Padding(
           padding: const EdgeInsets.symmetric(vertical: 40.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,

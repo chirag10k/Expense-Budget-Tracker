@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:budgetingapp/enums/connectivity_status.dart';
 import 'package:budgetingapp/screens/authentication/wrapper.dart';
 import 'package:budgetingapp/services/auth_service.dart';
