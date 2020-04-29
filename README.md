@@ -31,7 +31,7 @@ XBudget is an income and expense tracking application developed using Flutter pl
 
 ### Screenshots
 
-<img src="homep.gif" height="300em" /> <img src="home.jpg" height="300em" /> <img src="expense.jpg" height="300em" /> <img src="graph.jpg" height="300em" /> <img src="expense.jpeg" height="300em" /><img src="income.jpeg" height="300em" /><img src="profile.jpg" height="300em" /><img src="onboard1.jpg" height="300em" />
+<img src="homep.gif" height="300em" /> <img src="home.jpg" height="300em" /> <img src="expense.jpg" height="300em" /> <img src="graph.jpg" height="300em" /> <img src="expense.jpeg" height="300em" /> <img src="income.jpeg" height="300em" /> <img src="profile.jpg" height="300em" /> <img src="onboard1.jpg" height="300em" />
 
 ## iOS
 
