@@ -1,4 +1,3 @@
-# budgetingapp
 # XBudget
 
 First Income and Expense Tracking Budget Application developed using Flutter
