@@ -53,7 +53,7 @@ I welcome and encourage all pull requests. It usually will take me within 24-48 
 
 ### Created & Maintained By
 
-[Chirag Saraogi](https://github.com/chirag10k) ([@ChiragSaraogi](https://twitter.com/ChiragSaraogi)) ([Insta](https://www.instagram.com/chirag_c.s/)
+[Chirag Saraogi](https://github.com/chirag10k) [Twitter](https://twitter.com/ChiragSaraogi) [Insta](https://www.instagram.com/chirag_c.s/)
 
 > If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
 >
