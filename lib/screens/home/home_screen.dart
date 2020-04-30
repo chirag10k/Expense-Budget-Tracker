@@ -56,7 +56,9 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
           return Scaffold(
             body: Stack(
               children: <Widget>[
-                Container(
+
+
+                /*Container(
                   height: MediaQuery.of(context).size.height,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
@@ -348,7 +350,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                       ),
                     ),
                   ),
-                ),
+                ),*/
               ],
             ),
           );
